@@ -46,7 +46,7 @@
   prerequisites:
     Открыта главная страница на мобильном устройстве
   test-data: |
-    Smartphone = Samsung Galaxy S21 5G SM-G991N Android 13 Chrome 121.0.6167.101
+    Smartphone = Samsung Galaxy S21 5G SM-G991N Android 14 Google Chrome 121.0.6167.101
   steps:
     - Подключаемся к главной странице сайта с мобильного устройства
   expected-result: |
