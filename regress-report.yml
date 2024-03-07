@@ -1,7 +1,6 @@
 ---
 test-cases:
   - summary: |
-  - summary: |
       Проверка возможности поиска товара с помощью фильтра по ключевому слову
     status: pass
   
@@ -24,11 +23,11 @@ bugreports:
       Google Chrome 121.0.6167.101
       Android 14
     steps-to-reproduce: |
-      Полный перечень шагов для воспроизведения и описание, на каком шаге произошла ошибка
+      Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     expected-result: |
-      Какой результат должен был быть без ошибки
+      Сайт перенаправляет на свою мобильную версию
     actual-result: |
-      Какой результат получился на самом деле
+      На странице ничего не происходит
 
   - summary: |
       Проверка на совместимость с последними версиями браузеров
@@ -53,8 +52,7 @@ bugreports:
       Yandex Browser 24.1.3.809 (64-bit)
       ОС Windows 11
     steps-to-reproduce: |
-      1. Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-      2. Сделать прокрутку страницы вниз
+      Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     expected-result: |
       Есть ссылки на порядковые страницы
     actual-result: |
