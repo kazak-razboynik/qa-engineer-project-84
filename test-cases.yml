@@ -59,10 +59,10 @@
   prerequisites:
     Открыта главная страница
   test-data: |
-    Laptop = OS Windows Yandex.Browser version 23.11.3.965 (64-bit)
-    Laptop = OS Windows Firefox version 121.0 (64-bit)
-    Laptop = OS Windows Chrome version 121.0.6167.86 (64-bit)
-    Laptop = OS Windows Opera version 106.0.4998.66
+    Laptop = OS Windows 11 Yandex.Browser version 23.11.3.965 (64-bit)
+    Laptop = OS Windows 11 Firefox version 121.0 (64-bit)
+    Laptop = OS Windows 11 Chrome version 121.0.6167.86 (64-bit)
+    Laptop = OS Windows 11 Opera version 106.0.4998.66
   steps:
     - Подключаемся к главной странице сайта с разных браузеров
   expected-result: |
