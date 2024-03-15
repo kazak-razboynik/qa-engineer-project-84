@@ -53,21 +53,21 @@
   expected-result: |
     Пользователь должен увидеть список товаров товары выбранной категории у которых присутсвует текст поиска в наименовании
     
-//- summary: |
-//    Проверка на совместимость с последними версиями браузеров
-//  requirement: |
-//    Успешное подключение к сайту
-//  prerequisites:
-//    Открыта главная страница
-//  test-data: |
-//    Laptop = OS Windows 11 Yandex.Browser version 23.11.3.965 (64-bit)
-//    Laptop = OS Windows 11 Firefox version 121.0 (64-bit)
-//    Laptop = OS Windows 11 Chrome version 121.0.6167.86 (64-bit)
-//    Laptop = OS Windows 11 Opera version 106.0.4998.66
-//  steps:
-//    - Подключаемся к главной странице сайта с разных браузеров
-//  expected-result: |
-//    Сайт должен подключаться и корректно отображаться
+- summary: |
+    Проверка на совместимость с последними версиями браузеров
+  requirement: |
+    Успешное подключение к сайту
+  prerequisites:
+    Открыта главная страница
+  test-data: |
+    Laptop = OS Windows 11 Yandex.Browser version 23.11.3.965 (64-bit)
+    Laptop = OS Windows 11 Firefox version 121.0 (64-bit)
+    Laptop = OS Windows 11 Chrome version 121.0.6167.86 (64-bit)
+    Laptop = OS Windows 11 Opera version 106.0.4998.66
+  steps:
+    - Подключаемся к главной странице сайта с разных браузеров
+  expected-result: |
+    Сайт должен подключаться и корректно отображаться
     
 - summary: |
     Проверка возможности добавлять товар в корзину и просматривать ее содержимое
