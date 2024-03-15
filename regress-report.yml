@@ -54,6 +54,10 @@ test-cases:
   status: pass
 
 - summary: |
+    Проверка отправки информации о заказе на сервер
+  status: pass
+
+- summary: |
     Проверка возможности вернутся из корзины в каталог
   status: pass
 
