@@ -57,7 +57,7 @@
     Открыта главная страница
   test-data: |
     Laptop = OS Windows Yandex.Browser version 23.11.3.965 (64-bit)
-    Search = текст = smatrtphone
+    Search = текст = oil
   steps:
     - Вводим текст
   expected-result: |
@@ -100,8 +100,8 @@
     Открыта главная страница
   test-data: |
     Laptop = OS Windows Yandex.Browser version 23.11.3.965 (64-bit)
-    Search = текст = apple
-    Category = smartphones
+    Search = текст = oil
+    Category = fragrances
   steps:
     - Вводим текст
     - Выбираем категорию
