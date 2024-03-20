@@ -252,7 +252,7 @@
   test-data: |
       Laptop = OS Windows Yandex.Browser version 23.11.3.965 (64-bit)
   steps:
-    - Нажимаем на кнопку возврата в каталог
+    - Нажимаем на кнопку "Магазин"
   expected-result: |
     Сайт должен перенаправить на страницу каталога
     
