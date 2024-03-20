@@ -102,12 +102,13 @@
     Laptop = OS Windows Yandex.Browser version 23.11.3.965 (64-bit)
     Search = текст = oil
     Category = fragrances
+    Search = текст = iphone
+    Category = smartphones
   steps:
-    - Вводим текст
-    - Выбираем категорию
+    - Вводим текст = oil
+    - Выбираем категорию = fragrances
     - Удаляем текст и категорию
-    - Вводим текст
-    - Выбираем категорию
+    - Вводим текст = iphone
   expected-result: |
     Сайт должен выдать список товаров товары выбранной категории у которых присутсвует текст поиска в наименовании
     
