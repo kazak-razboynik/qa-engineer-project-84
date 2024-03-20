@@ -86,11 +86,11 @@ test-cases:
   
 - summary: |
     Проверка возможности поиска товара по клику на категорию в карточке товара
-  status: fail
+  status: pass
   
 - summary: |
     Проверка отсутствия возможности поиска товаров с помощью фильтра цены c некорректными значениями
-  status: pass
+  status: fail
  
 bugreports:
   - summary: |
@@ -111,7 +111,7 @@ bugreports:
       Некорректно работает поиск товара с помощью фильтра цены 
     environment: |
       Yandex Browser 24.1.3.809 (64-bit)
-      ОС Windows 11
+      OS Windows 11
     steps-to-reproduce: |
       Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       Вводим значения Price: From = 200; To = 500
@@ -124,7 +124,7 @@ bugreports:
       Некорректно работает поиск товара с помощью фильтра по ключевому слову и категории
     environment: |
       Yandex Browser 24.1.3.809 (64-bit)
-      ОС Windows 11
+      OS Windows 11
     steps-to-reproduce: |
       Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       Вводим значения Search = текст = oil; Category = fragrances
@@ -133,3 +133,19 @@ bugreports:
     actual-result: |
       Сайт некорректно отрабатывает поиск по фильтру. Без выбранной категории поиск по ключевому слову не производится.
 
+ - summary: |
+      Отображает товары с помощью фильтра цены c некорректными значениями 
+    environment: |
+      Yandex Browser 24.1.3.809 (64-bit)
+      OS Windows 11
+    steps-to-reproduce: |
+      Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ 
+      Вводим значения Price: From = 500; To = -200
+    expected-result: |
+      Не показывает товары
+    actual-result: |
+      Показывает товары при некорректных значениях в поиске
+
+
+
+      
