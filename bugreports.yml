@@ -43,7 +43,7 @@
 
 - summary: |
     Проверка наличия в каталоге названия, рейтинга, цены со скидкой и без нее
-    environment: |
+  environment: |
     Laptop = OS Windows Yandex.Browser version 23.11.3.965 (64-bit)
   steps-to-reproduce: |
     - Просмотриваем информацию в каталоге
