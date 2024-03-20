@@ -57,7 +57,7 @@
     Открыта главная страница
   test-data: |
     Laptop = OS Windows Yandex.Browser version 23.11.3.965 (64-bit)
-    Search = текст = oil
+    Search = текст = smatrtphone
   steps:
     - Вводим текст
   expected-result: |
