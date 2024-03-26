@@ -339,7 +339,7 @@
     Открыта главная страница
   test-data: |
     Laptop = OS Windows Yandex.Browser version 23.11.3.965 (64-bit)
-    Price = From = 500
+    Price = From = -500
     Price = To = -200
   steps:
     - Вводим значения Price/ From - To
