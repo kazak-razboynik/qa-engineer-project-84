@@ -94,47 +94,45 @@ test-cases:
  
 bugreports:
   
-  - summary: |
-      Некорректно работает поиск товара с помощью фильтра цены 
-    environment: |
-      Yandex Browser 24.1.3.809 (64-bit)
-      OS Windows 11
-    steps-to-reproduce: |
-      Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-      Вводим значения Price: From = 200; To = 500
-    expected-result: |
-      Сайт должен показать список товаров c помощью фильтра цены
-    actual-result: |
-      Сайт не реагирует на фильтр цены и не меняет список товаров в каталоге
- 
-  - summary: |
-      Некорректно работает поиск товара с помощью фильтра по ключевому слову и категории
-    environment: |
-      Yandex Browser 24.1.3.809 (64-bit)
-      OS Windows 11
-    steps-to-reproduce: |
-      Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-      Вводим значения Search = текст = oil; Category = fragrances
-      Удаляем текст и категорию
-      Вводим значения Search = текст = iphone
-    expected-result: |
-      Сайт должен выдать список товаров товары выбранной категории у которых присутсвует текст поиска в наименовании
-    actual-result: |
-      После удаления категории ничего не происходит
-      Без выбранной категории поиск по ключевому слову не производится
+- summary: |
+    Некорректно работает поиск товара с помощью фильтра цены 
+  environment: |
+    Yandex Browser 24.1.3.809 (64-bit)
+    OS Windows 11
+  steps-to-reproduce: |
+    Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    Вводим значения Price: From = 200; To = 500
+  expected-result: |
+    Сайт должен показать список товаров c помощью фильтра цены
+  actual-result: |
+    Сайт не реагирует на фильтр цены и не меняет список товаров в каталоге
 
- - summary: |
-      Отображает товары с помощью фильтра цены c некорректными значениями 
-    environment: |
-      Yandex Browser 24.1.3.809 (64-bit)
-      OS Windows 11
-    steps-to-reproduce: |
-      Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ 
-      Вводим значения Price: From = 500; To = -200
-    expected-result: |
-      Не показывает товары
-    actual-result: |
-      Показывает товары при некорректных значениях в поиске
+- summary: |
+    Некорректно работает поиск товара с помощью фильтра по ключевому слову и категории
+  environment: |
+    Yandex Browser 24.1.3.809 (64-bit)
+    OS Windows 11
+  steps-to-reproduce: |
+    Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    Вводим значения Search = текст = oil; Category = fragrances
+    Удаляем текст и категорию
+    Вводим значения Search = текст = iphone
+  expected-result: |
+    Сайт должен выдать список товаров товары выбранной категории у которых присутсвует текст поиска в наименовании
+  actual-result: |
+    После удаления категории ничего не происходит
+    Без выбранной категории поиск по ключевому слову не производится
 
-
-      
+- summary: |
+    Отображает товары с помощью фильтра цены c некорректными значениями 
+  environment: |
+    Yandex Browser 24.1.3.809 (64-bit)
+    OS Windows 11
+  steps-to-reproduce: |
+    Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ 
+    Вводим значения Price: From = 500; To = -200
+  expected-result: |
+    Не показывает товары
+  actual-result: |
+    Показывает товары при некорректных значениях в поиске
+    
