@@ -88,7 +88,7 @@
     Price = From = 200
     Price = To = 500
   steps:
-    - Вводим значения Price: From - To
+    - Вводим значения Price / From - To
   expected-result: |
     Сайт должен показать список товаров c помощью фильтра цены
       
@@ -342,7 +342,7 @@
     Price = From = 500
     Price = To = -200
   steps:
-    - Вводим значения Price: From - To
+    - Вводим значения Price/ From - To
   expected-result: |
     Сайт должен показать список товаров c помощью фильтра цены
 
