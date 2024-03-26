@@ -101,7 +101,7 @@ bugreports:
     OS Windows 11
   steps-to-reproduce: |
     Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    Вводим значения Price: From = 200; To = 500
+    Вводим значения Price: From = 500; To = -200
   expected-result: |
     Сайт должен показать список товаров c помощью фильтра цены
   actual-result: |
