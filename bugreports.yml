@@ -94,3 +94,17 @@
   actual-result: |
     Сайт не перенаправяет на страницу каталога с поиском товаров по категории из карточки товара
   
+- summary: |
+    Проверка отсутствия возможности поиска товаров с помощью фильтра цены c некорректными значениями 
+  environment: |
+    Yandex Browser 24.1.3.809 (64-bit)
+    OS Windows 11
+  steps-to-reproduce: |
+    Зайти на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ 
+    Вводим значения Price / From = 500; To = -200
+  expected-result: |
+    Не показывает товары
+  actual-result: |
+    Отображает товары с помощью фильтра цены c некорректными значениями
+    
+
